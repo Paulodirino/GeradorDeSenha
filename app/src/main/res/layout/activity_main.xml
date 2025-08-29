@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gerador de Senha"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/password_background"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="SuaSenhaSuperSegura123"/>
+
+    <Button
+        android:id="@+id/buttonRegenerate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Regerar Senha"
+        app:layout_constraintTop_toBottomOf="@id/textViewPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCopy"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"/>
+
+    <Button
+        android:id="@+id/buttonCopy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Copiar Senha"
+        app:layout_constraintTop_toBottomOf="@id/textViewPassword"
+        app:layout_constraintStart_toEndOf="@id/buttonRegenerate"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewPasswordLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comprimento da Senha: 12"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/buttonRegenerate"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <SeekBar
+        android:id="@+id/seekBarPasswordLength"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="32"
+        android:min="8"
+        android:progress="12"
+        app:layout_constraintTop_toBottomOf="@id/textViewPasswordLength"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxUppercase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Letras Maiúsculas"
+        app:layout_constraintTop_toBottomOf="@id/seekBarPasswordLength"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxLowercase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Letras Minúsculas"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxUppercase"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Números"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxLowercase"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxExcludeSimilar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excluir Caracteres Semelhantes (I, l, 1, O, 0)"
+        app:layout_constraintTop_toBottomOf="@id/checkBoxNumbers"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

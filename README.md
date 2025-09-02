@@ -31,3 +31,13 @@ A simple Android application to generate random and secure passwords.
 
 This application provides a straightforward way to create strong, random passwords tailored to your security needs.
 ![Gerador de senha](https://github.com/user-attachments/assets/73ae8567-97cf-42d0-b830-84dbdcf3e2f6)
+
+
+
+
+## Screenshots
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/73ae8567-97cf-42d0-b830-84dbdcf3e2f6" alt="Card Back" width="45%">
+</p>
+

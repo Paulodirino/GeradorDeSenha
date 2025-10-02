@@ -33,6 +33,6 @@ A simple Android application to generate random and secure passwords.
 ## Screenshots
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/73ae8567-97cf-42d0-b830-84dbdcf3e2f6" alt="Card Back" width="45%">
+  <img src="https://github.com/user-attachments/assets/5aaa36fc-f044-4e7a-a032-1e14eb3fd7e8" alt="Card Back" width="45%">
 </p>
 

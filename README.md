@@ -1,33 +1,27 @@
-# Password Generator Android App
-
-A simple Android application to generate random and secure passwords.
-
-## Features
-
-*   **Customizable Password Length:** Users can define the desired length for their passwords using a slider.
-*   **Character Set Options:**
-    *   Include Uppercase Letters (A-Z)
-    *   Include Lowercase Letters (a-z)
-    *   Include Numbers (0-9)
-*   **Exclude Similar Characters:** Option to exclude ambiguous characters (e.g., I, l, 1, O, 0) to improve password readability.
-*   **Prominent Password Display:** The generated password is clearly displayed.
-*   **Regenerate Password:** A button to quickly generate a new password with the current settings.
-*   **Copy to Clipboard:** Easily copy the generated password to the clipboard with a single tap.
-*   **Intuitive UI:** Clean and user-friendly interface for easy navigation and use.
-
-## How to Use
-
-1.  **Set Password Length:** Adjust the slider to choose the desired password length. The current length will be displayed.
-2.  **Select Character Types:** Check the boxes for uppercase letters, lowercase letters, and/or numbers to include them in the password.
-3.  **Exclude Similar Characters (Optional):** Check the "Exclude Similar Characters" box if you want to avoid characters like 'I', 'l', '1', 'O', '0'.
-4.  **Generate Password:** The password will automatically generate or update as you change the settings. You can also tap the "Regenerate" button.
-5.  **Copy Password:** Tap the "Copy" button to copy the generated password to your device's clipboard.
-
-## Technologies Used
-
-*   **Kotlin:** The application logic is written entirely in Kotlin.
-*   **Android SDK:** Built using standard Android components and libraries.
-*   **XML:** Used for designing the user interface layouts.
+# National Holiday Lookup
+​
+ A simple Android application to look up national holidays for a given year.
+​
+ ## Features
+​
+ *   **Search by Year:** Users can enter a year to search for the corresponding holidays.
+ *   **Holiday List Display:** The holidays for the searched year are displayed in a list, showing the date and name of each holiday.
+ *   **Intuitive UI:** Clean and user-friendly interface for easy navigation and use.
+​
+ ## How to Use
+​
+ 1.  **Enter the Year:** Type the desired year into the text field.
+ 2.  **Search:** Tap the "Search" button to look up the holidays.
+ 3.  **View Holidays:** The list of holidays for the selected year will be displayed on the screen.
+​
+ ## Technologies Used
+​
+ *   **Kotlin:** The application logic is written entirely in Kotlin.
+ *   **Android SDK:** Built using standard Android components and libraries.
+ *   **XML:** Used for designing the user interface layouts.
+ *   **Retrofit:** For making network calls to the holiday API.
+ *   **Coroutines:** To manage asynchronous operations efficiently.
+ *   **ViewBinding:** To safely access views from the layout.
 
 
 ## Screenshots
